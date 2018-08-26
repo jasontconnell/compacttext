@@ -34,7 +34,7 @@ func main() {
 	s := bufio.NewScanner(r)
 	var text string
 	for s.Scan() {
-		text += s.Text()
+		text += s.Text() + " "
 	}
 
 	res := compactor.Process(text, *l)
